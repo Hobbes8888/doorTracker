@@ -34,5 +34,5 @@ def capture():
         else:
             pair = 0
     
-
+print("program running")
 button.when_released = capture
