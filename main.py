@@ -35,4 +35,5 @@ def capture():
             pair = 0
     
 print("program running")
-button.when_released = capture
+while True:
+    button.when_released = capture
