@@ -5,10 +5,10 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['POST'])
 def webhook():
     if request.method == 'POST':
+        html = f"<h1>Deployed with Zeet!!</h1>"
         print(request.json)
-        return 'success', 200
-    else:
-        abort(400)
+    return html, request.json
+
 
 
 
