@@ -4,10 +4,8 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    html = "<h1>Webhook Received</h1>"
+    html = "<h1>Webhook Received YAY!</h1>"
     return html
-
-
 
 
 if __name__ == '__main__':
